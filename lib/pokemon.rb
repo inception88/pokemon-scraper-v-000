@@ -12,7 +12,7 @@ class Pokemon
   end
 
   def self.save(name, type, db)
-    initialize(name: name, type: type, db: db)
+    new_instance = initialize(name: name, type: type, db: db)
   end
 
 end
