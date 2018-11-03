@@ -12,7 +12,7 @@ class Pokemon
   end
 
   def self.save(name, type, db, id = nil)
-    self.new(name: name, type: type, db: db)
+    self.new(name: name, type: type, db: db, id: id)
   end
 
 end
