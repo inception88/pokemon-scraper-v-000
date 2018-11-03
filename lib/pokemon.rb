@@ -19,7 +19,6 @@ class Pokemon
 
   def self.find(id, db)
     array = db.execute("SELECT name, type FROM pokemon WHERE id = #{id}")
-    binding.pry
     self.save(array[0][0], array[0][1], db)
   end
 end
