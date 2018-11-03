@@ -19,7 +19,7 @@ class Pokemon
     self.new(name: name, type: type, db: db, id: id)
   end
 
-  def self.find
+  def self.find(id, db)
     
   end
 end
