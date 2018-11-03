@@ -5,7 +5,7 @@ class Pokemon
 
   def initialize(id:, name:, type:, db:)
     if id == nil
-      @id = @@al.length + 1
+      @id = @@all.length + 1
     else
       @id = id
     end
