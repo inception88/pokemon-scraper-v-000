@@ -16,11 +16,11 @@ class Pokemon
   end
 
   def self.save(name, type, db)
-    self.new(name: name, type: type, db: db, id: id)
     db.execute("INSERT INTO cats (name, breed, age) VALUES (?, ?, ?)",name, breed, age)
+    self.new(name: name, type: type, db: db, id: id)
   end
 
   def self.find(id, db)
-    
+
   end
 end
