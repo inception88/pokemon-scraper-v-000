@@ -8,6 +8,7 @@ class Pokemon
       @id = @@al.length + 1
     else
       @id = id
+    end
     @name = name
     @type = type
     @db = db
